@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FF00FF;
+}
+
+li {
+  float: left;
+}
+
+li a, .drop {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #FF00FF;
+}
+
+li.dropdown {
+  display: inline-block;
+  border-right: 1px solid white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FF00FF;
+}
+
+.dropdown-content a {
+  color: White;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #FF00FF;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li class="dropdown">
+    <a class="drop">File</a>
+    <div class="dropdown-content">
+      <a href="">Open</a>
+      <a href="">Save</a>
+      <a href="">Print</a>
+	  <a href="">Exit</a>
+	  <li class="dropdown">
+    <a class="drop">Edit</a>
+    <div class="dropdown-content">
+      <a href="#">Copy</a>
+      <a href="#">Cut</a>
+      <a href="#">Paste</a>
+	  <a>------</a>
+	  <a href="#">Format</a>
+	<li class="dropdown">
+	<a class="drop">Help</a>
+    <div class="dropdown-content">
+      <a href="#">About</a>
+    </div>
+  </li>
+</ul>
+
+<h3>Dropdown Buttons</h3>
+
+</body>
+</html>
